@@ -8,7 +8,7 @@
             <i class="fa fa-fw fa-filter"></i> Cari Berdasarkan
         </button>
         <a href="<?= base_url('logout'); ?>" <button data-toggle="tooltip" class="btn btn-sm btn-primary mb-3">
-            <i class="fa fa-fw fa-user"></i> Log Out Asti :)
+            <i class="fa fa-fw fa-user"></i> Log Out
             </button>
         </a>
     </div>

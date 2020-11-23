@@ -57,8 +57,8 @@ class MainModel extends CI_Model
     public function getKategoriByTipe($tipe)
     {
         $this->db->join('user_kategori uk', 'uk.kategori_id=k.id_kategori');
-        $this->db->where('k.tipe_kategori', $tipe);
-        $this->db->where('uk.user_id', userInfo('id_user'));
+        // $this->db->where('k.tipe_kategori', $tipe);
+        // $this->db->where('uk.user_id', userInfo('id_user'));
         return $this->db->get('kategori k')->result();
     }
 
@@ -66,7 +66,7 @@ class MainModel extends CI_Model
     {
         $this->db->select_max('id_transaksi');
         $this->db->like('id_transaksi', $prefix, 'after');
-        $this->db->where('user_id', userInfo('id_user'));
+        // $this->db->where('user_id', userInfo('id_user'));
         return $this->db->get('transaksi')->row_array()['id_transaksi'];
     }
 
